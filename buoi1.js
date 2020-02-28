@@ -44,8 +44,8 @@
 
 //8: object methond
 // const teo = {
-//     name="Nguyen Van Teo",
-//     age=10,
+//     name : "Nguyen Van Teo",
+//     age : 10,
 //     getName : function(){
 //         return this.name
 //     }
@@ -55,8 +55,8 @@
 //template string
 //bt 8
 // const rectangle = {
-//     width = 5,
-//     height = 7,
+//     width : 5,
+//     height : 7,
 //     getWidth : function(){
 //         return this.width
 //     },
@@ -73,6 +73,6 @@
 
 //9: toán tử so sánh
 // < > <= => !: phủ định && 
-var a=5
-var b='100'
-console.log(a>b)
+// var a=5
+// var b='100'
+// console.log(a>b)

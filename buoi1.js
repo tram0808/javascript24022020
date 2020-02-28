@@ -54,19 +54,25 @@
 
 //template string
 //bt 8
-const rectangle = {
-    width = 5,
-    height = 7,
-    getWidth : function(){
-        return this.width
-    },
-    getHeight : function(){
-         return this.height
-    },
-    getArea : function(){
-        return `dien tich  ${this.width * this.height}`
-    }
-}
-console.log(rectangle.getWidth())
-console.log(rectangle.getHeight())
-console.log(rectangle.getArea())
+// const rectangle = {
+//     width = 5,
+//     height = 7,
+//     getWidth : function(){
+//         return this.width
+//     },
+//     getHeight : function(){
+//          return this.height
+//     },
+//     getArea : function(){
+//         return `dien tich  ${this.width * this.height}`
+//     }
+// }
+// console.log(rectangle.getWidth())
+// console.log(rectangle.getHeight())
+// console.log(rectangle.getArea())
+
+//9: toán tử so sánh
+// < > <= => !: phủ định && 
+var a=5
+var b='100'
+console.log(a>b)

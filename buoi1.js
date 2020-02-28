@@ -12,4 +12,11 @@
 //th2: gọi thuộc tính ko tồn tại trong object
  //3: object
 // var teo={name:"Nguyen Van Teo",age:10}
- //console.log(teo.address)
+ //console.log(teo.name)
+ //console.log(teo['name'])
+
+ //4: kiểu array
+ // const ko lấy arrayNymber = 1 cái khác mà thay đổi giá trị trong mảng đc
+//  const arrayNumber=[]
+//  arrayNumber[0]=10
+//  console.log(arrayNumber)

@@ -72,7 +72,20 @@
 // console.log(rectangle.getArea())
 
 //9: toán tử so sánh
-// < > <= => !: phủ định && 
+// < > <= >= !: phủ định && ||
 // var a=5
-// var b='100'
-// console.log(a>b)
+// var b=10
+// các giá trị là flase: null, false, undefied, 0, '', NaN
+// undefied+undefied=NaN
+// undefied+số=NaN
+// null đc xem như =0
+// if (NaN){
+//     console.log("true")
+// } else{
+//     console.log("false")
+// }
+var  a=5
+var b  //b là undefied
+console.log(a+b)
+
+

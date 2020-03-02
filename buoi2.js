@@ -15,8 +15,49 @@
 // do {
 //     console.log(a)
 // } while (a<5)
-var a = [1, 2, 4, 8, 16];
-//* Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
-for(var i=a.length-1; i>-1; i--){
-    console.log(a[i])
+// var a = [1, 2, 4, 8, 16];
+// //* Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
+// for(var i=a.length-1; i>-1; i--){
+//     console.log(a[i])
+// }
+
+//11: For in, for of
+const number =[1,2,3,4,5,6,7,8,9,10]
+// const teo={
+//     name:'teo',
+//     age:10
+// }
+// for(const props in teo){
+//     console.log(props)
+// }
+// for (const value of number){
+//     console.log(value)
+// }
+
+var apartment = {
+    bedroom: {
+      area: 20,
+      bed: {
+        type: 'twin-bed',
+        price: 100
+      }
+    }
+  };
+// for(const key in apartment){
+//     console.log("key apartment "+key)
+//     for(const keybedroom in apartment[key]){
+//         console.log("key bedroom "+ keybedroom)
+//         for(const keybed in apartment[key][keybedroom]){
+//             console.log("key bed "+ keybed)
+//         }
+//     }
+// }  
+
+function getKey(object){
+    for(const key in object){
+        console.log(key)
+        if (typeof object[key]=== 'object')
+        getKey(object[key])
+    }
 }
+getKey(apartment)

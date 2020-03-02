@@ -34,15 +34,15 @@ const number =[1,2,3,4,5,6,7,8,9,10]
 //     console.log(value)
 // }
 
-var apartment = {
-    bedroom: {
-      area: 20,
-      bed: {
-        type: 'twin-bed',
-        price: 100
-      }
-    }
-  };
+// var apartment = {
+//     bedroom: {
+//       area: 20,
+//       bed: {
+//         type: 'twin-bed',
+//         price: 100
+//       }
+//     }
+//   };
 // for(const key in apartment){
 //     console.log("key apartment "+key)
 //     for(const keybedroom in apartment[key]){
@@ -53,11 +53,25 @@ var apartment = {
 //     }
 // }  
 
-function getKey(object){
-    for(const key in object){
-        console.log(key)
-        if (typeof object[key]=== 'object')
-        getKey(object[key])
-    }
-}
-getKey(apartment)
+// function getKey(object){
+//     for(const key in object){
+//         console.log(key)
+//         if (typeof object[key]=== 'object')
+//         getKey(object[key])
+//     }
+// }
+// getKey(apartment)
+
+//12: array method
+const arrayNames =["teo", "ti","tun"]
+// // thêm phần tử cuối mảng
+// arrayNames.push("hoa", "tuan")
+// //thêm phần tử ở đầu mảng
+// arrayNames.unshift("dao","phuong")
+// //xóa phần tử cuối mảng
+// arrayNames.pop()
+// //xóa phần tử đầu
+// arrayNames.shift()
+
+//
+console.log(arrayNames)

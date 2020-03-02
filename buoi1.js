@@ -84,8 +84,12 @@
 // } else{
 //     console.log("false")
 // }
-var  a=5
-var b  //b là undefied
-console.log(a+b)
+// var  a=5
+// var b  //b là undefied
+// console.log(a+b)
+
+var a={name: 'teo'} //ko use toán tử == để ss 2 object
+var b={name:'teo'}
+console.log(a.name===b.name) //ss cùng kiểu dữ, cùng giá trị
 
 

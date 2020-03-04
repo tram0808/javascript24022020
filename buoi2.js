@@ -16,13 +16,13 @@
 //     console.log(a)
 // } while (a<5)
 // var a = [1, 2, 4, 8, 16];
-// //* Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
+// // //* Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
 // for(var i=a.length-1; i>-1; i--){
 //     console.log(a[i])
 // }
 
 //11: For in, for of
-const number =[1,2,3,4,5,6,7,8,9,10]
+// const number =[1,2,3,4,5,6,7,8,9,10]
 // const teo={
 //     name:'teo',
 //     age:10
@@ -63,7 +63,7 @@ const number =[1,2,3,4,5,6,7,8,9,10]
 // getKey(apartment)
 
 //12: array method
-const arrayNames =["teo", "ti","tun"]
+// const arrayNames =["teo", "ti","tun"]
 // // thêm phần tử cuối mảng
 // arrayNames.push("hoa", "tuan")
 // //thêm phần tử ở đầu mảng
@@ -74,4 +74,12 @@ const arrayNames =["teo", "ti","tun"]
 // arrayNames.shift()
 
 //
-console.log(arrayNames)
+// console.log(arrayNames)
+function multiply(arr){
+    var tich=1
+    for(const value of arr){
+        tich=tich*value
+    }
+    console.log(tich)
+}
+console.log(multiply([2,3,4]))

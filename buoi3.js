@@ -71,16 +71,27 @@
 // console.log(newNumbers)
 
 //**** */
-const numbers=[1,2,3,4,5,6,7,8,9,10]
-Array.prototype.myMap = function(cb){
-    const newArray = []
-    for(var i=0; i < this.length; i++){
-        newArray.push(cb(this[i]))    //newArray[i]=cb(this[i])
-    }
-    return newArray   
-}
-const newNumbers = numbers.map(function(value){  
-     if(value > 5 ) return value*2
-     return value
- })
- console.log(newNumbers)
+// const numbers=[1,2,3,4,5,6,7,8,9,10]
+// Array.prototype.myMap = function(cb){
+//     const newArray = []
+//     for(var i=0; i < this.length; i++){
+//         newArray.push(cb(this[i]))    //newArray[i]=cb(this[i])
+//     }
+//     return newArray   
+// }
+// const newNumbers = numbers.map(function(value){  
+//      if(value > 5 ) return value*2
+//      return value
+//  })
+//  console.log(newNumbers)
+
+//bài tập: 
+const arrSinhvien=[
+    {name:"teo", age:15},
+    {name:"ti", age:12},
+    {name:"tun", age:11},
+]
+const arryAge = arrSinhvien.map(function(value){
+   return value.age
+})
+console.log(arryAge)

@@ -48,15 +48,22 @@
 // }
 // handleNumber(1,2)
 
-function handleNumber(dosth){
-    for (var i = 1; i <= 100 ; i++){
-        const dk = dosth(i)
-        if (dk) console.log(i)
-    }
-}
+// function handleNumber(dosth){
+//     for (var i = 1; i <= 100 ; i++){
+//         const dk = dosth(i)
+//         if (dk) console.log(i)
+//     }
+// }
 
-handleNumber(function(number){
-    if(number%2==0) return true     //sử lý điiều kiện thì để vào if
-    return false
+// handleNumber(function(number){
+//     if(number%2 ==0) return true     //sử lý điều kiện thì để vào if
+//     return false
+// })
 
+//14: Hàm map
+const numbers=[1,2,3,4,5,6,7,8,9,10]
+const newNumbers = numbers.map(function(value){     //ko sử dụng value thì function(_ ,index )
+    if(value > 5 ) return value*2
+    return value
 })
+console.log(newNumbers)

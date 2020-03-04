@@ -37,6 +37,26 @@
 // for (var z = 1; z <= 100 ; z++){
 //     if( i%3 ==1) console.log(z)
 // }
-for (var e = 1; e <= 100 ; e++){
-    if( Math.sqrt(e)%1 ==0) console.log(e)
+// for (var e = 1; e <= 100 ; e++){
+//     if( Math.sqrt(e)%1 ==0) console.log(e)
+// }
+
+// function handleNumber(sodu, sochia){
+//     for (var i = 1; i <= 100 ; i++){
+//         if( i % sochia == sodu) console.log(i)
+//     }
+// }
+// handleNumber(1,2)
+
+function handleNumber(dosth){
+    for (var i = 1; i <= 100 ; i++){
+        const dk = dosth(i)
+        if (dk) console.log(i)
+    }
 }
+
+handleNumber(function(number){
+    if(number%2==0) return true     //sử lý điiều kiện thì để vào if
+    return false
+
+})

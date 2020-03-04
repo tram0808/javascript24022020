@@ -61,9 +61,26 @@
 // })
 
 //14: Hàm map
+//bt 1
+// const numbers=[1,2,3,4,5,6,7,8,9,10]
+// const newNumbers = numbers.map(function(value){  
+//    //ko sử dụng value thì function(_ ,index )
+//     if(value > 5 ) return value*2
+//     return value
+// })
+// console.log(newNumbers)
+
+//**** */
 const numbers=[1,2,3,4,5,6,7,8,9,10]
-const newNumbers = numbers.map(function(value){     //ko sử dụng value thì function(_ ,index )
-    if(value > 5 ) return value*2
-    return value
-})
-console.log(newNumbers)
+Array.prototype.myMap = function(cb){
+    const newArray = []
+    for(var i=0; i < this.length; i++){
+        newArray.push(cb(this[i]))    //newArray[i]=cb(this[i])
+    }
+    return newArray   
+}
+const newNumbers = numbers.map(function(value){  
+     if(value > 5 ) return value*2
+     return value
+ })
+ console.log(newNumbers)

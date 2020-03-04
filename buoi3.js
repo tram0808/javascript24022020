@@ -85,13 +85,26 @@
 //  })
 //  console.log(newNumbers)
 
-//bài tập: 
+// // bài tập: 
+// const arrSinhvien=[
+//     {name:"teo", age:15},
+//     {name:"ti", age:12},
+//     {name:"tun", age:11},
+// ]
+// const arryAge = arrSinhvien.map(function(value){
+//    return value.age
+// })
+// console.log(arryAge)
+
+//15:filter
 const arrSinhvien=[
     {name:"teo", age:15},
     {name:"ti", age:12},
     {name:"tun", age:11},
 ]
-const arryAge = arrSinhvien.map(function(value){
-   return value.age
+const newArraySinhvien=arrSinhvien.filter(function(sinhvien){
+    if (sinhvien.age > 12) return true
+    return false
 })
-console.log(arryAge)
+console.log(newArraySinhvien)
+

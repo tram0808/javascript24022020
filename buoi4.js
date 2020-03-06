@@ -1,3 +1,5 @@
+//15:hàm reduce
+
 // // trả về số người đã vote
 // function totalVotes(arr){
 //     console.log = arr.reduce(function(previus, curentValue){
@@ -58,16 +60,35 @@
 // }
 // countOccurrences(["a", "b", "c", "b", "a", "a"]);
 
-const arraySinhvien =[
-    {name:'teo', age:10},
-    {name:'ti', age:20},
-    {name:'tuan', age:15}
-]
-//kết hợp phương thức map và reduce để tính tổng tuổi
-    const total= arraySinhvien.map(function(sinhvien){
-        return sinhvien.age
-    }).reduce(function(previus, curent){
-        return previus+curent
-    })
-console.log(total)
+// const arraySinhvien =[
+//     {name:'teo', age:10},
+//     {name:'ti', age:20},
+//     {name:'tuan', age:15}
+// ]
+// //kết hợp phương thức map và reduce để tính tổng tuổi
+//     const total= arraySinhvien.map(function(sinhvien){
+//         return sinhvien.age
+//     }).reduce(function(previus, curent){
+//         return previus+curent
+//     })
+// console.log(total)
 
+// 16: hàm sort
+// const arayNumber =[9,1,2,5,4,3,6,8,7]
+// // const arrayChar=['a','b', 'e','c','f','d']
+// // const newArrayChar = arayNumber.sort             // nó tự sắp xếp theo bảng mã unicode
+// const newArrayChar = arayNumber.sort(function(a,b){
+//     // return a-b  //tăng dần
+//     return b-a      //giảm dần
+// })
+// console.log(newArrayChar)
+
+//17:khởi tạo ra object
+function Sinhvien(name, age, address){
+    this.name = name;       //this:tượng trưng cho đối tượng gọi thuộc tính
+    this.age = age;
+    this.address = address;
+}
+const teo =  new Sinhvien ('teo', 20, '38 nguyen lam')
+delete teo.address      //xóa thuộc tính
+console.log(teo.address)

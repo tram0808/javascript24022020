@@ -102,8 +102,15 @@ const arrSinhvien=[
     {name:"ti", age:12},
     {name:"tun", age:11},
 ]
+// const newArraySinhvien=arrSinhvien.filter(function(sinhvien){
+//     if (sinhvien.age > 12) return true
+//     return false
+// })
+// console.log(newArraySinhvien)
+
+//viết function trả về 1 mảng mới. mảng sẽ chứa phần tử có số tuổi chẳn và khi chia cho 2 phải lớn hơn 5
 const newArraySinhvien=arrSinhvien.filter(function(sinhvien){
-    if (sinhvien.age > 12) return true
+    if (sinhvien.age %2==0 && (sinhvien.age/2)>5) return true
     return false
 })
 console.log(newArraySinhvien)

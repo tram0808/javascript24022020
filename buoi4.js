@@ -84,11 +84,46 @@
 // console.log(newArrayChar)
 
 //17:khởi tạo ra object
-function Sinhvien(name, age, address){
-    this.name = name;       //this:tượng trưng cho đối tượng gọi thuộc tính
-    this.age = age;
-    this.address = address;
-}
-const teo =  new Sinhvien ('teo', 20, '38 nguyen lam')
-delete teo.address      //xóa thuộc tính
-console.log(teo.address)
+// function Sinhvien(name, age, address){
+//     this.name = name;       //this:tượng trưng cho đối tượng gọi thuộc tính
+//     this.age = age;
+//     this.address = address;
+//     this.sayHello=function(){
+//         return "hello"
+//     }
+// }
+// // Sinhvien.prototype.schoolName={name:'sai gon'}    //thuộc tính dùng chung
+// Sinhvien.prototype.schoolName=function(){
+//     return "saigon"
+// }
+// const teo =  new Sinhvien ('teo', 20, '38 nguyen lam')
+// const ti =  new Sinhvien ('ti', 15, '37 nguyen lam')
+
+// // delete teo.address      //xóa thuộc tính
+// // console.log(teo.sayHello==ti.sayHello)      //false do ss vùng nhớ
+// console.log(ti.schoolName==teo.schoolName)      //true do cùng vùng nhớ
+
+//18: toán tử 3 ngôi
+// bieuthuc ? true : false     //false trả về sau dấu :
+
+// Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+function doSomething(a) {
+    var b;
+    if (a > 0) {
+      b = 1;
+    } else if (a < 0) {
+      b = 2;
+    } else {
+      b = 3;
+    }
+    return b;
+  }
+  
+  function doSomethingTernary(a) {
+      const b = a < 0 ? 2 : (a>0 ? 1 :3) 
+      return b
+    
+  }
+  console.log(doSomethingTernary(3))
+  console.log(doSomething())
+  

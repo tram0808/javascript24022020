@@ -43,17 +43,31 @@
 // ];
 // shoppingSpree(wishlist) // 227005
 
-function countOccurrences(arr) {
-    const value=arr.reduce(function(previus, curentValue){
-        if(curentValue in previus){
-            previus[curentValue]++
-        } else{
-            previus[curentValue]=1
-        }
-        return previus
-    },{})
-    console.log(value)
+// //bài tập 3
+// function countOccurrences(arr) {
+//     const value=arr.reduce(function(previus, curentValue){
+//         if(curentValue in previus){
+//             previus[curentValue]++
+//         } else{
+//             previus[curentValue]=1
+//         }
+//         return previus
+//     },{})
+//     console.log(value)
 
-}
-countOccurrences(["a", "b", "c", "b", "a", "a"]);
+// }
+// countOccurrences(["a", "b", "c", "b", "a", "a"]);
+
+const arraySinhvien =[
+    {name:'teo', age:10},
+    {name:'ti', age:20},
+    {name:'tuan', age:15}
+]
+//kết hợp phương thức map và reduce để tính tổng tuổi
+    const total= arraySinhvien.map(function(sinhvien){
+        return sinhvien.age
+    }).reduce(function(previus, curent){
+        return previus+curent
+    })
+console.log(total)
 

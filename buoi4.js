@@ -107,23 +107,32 @@
 // bieuthuc ? true : false     //false trả về sau dấu :
 
 // Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
-function doSomething(a) {
-    var b;
-    if (a > 0) {
-      b = 1;
-    } else if (a < 0) {
-      b = 2;
-    } else {
-      b = 3;
-    }
-    return b;
-  }
+// function doSomething(a) {
+//     var b;
+//     if (a > 0) {
+//       b = 1;
+//     } else if (a < 0) {
+//       b = 2;
+//     } else {
+//       b = 3;
+//     }
+//     return b;
+//   }
   
-  function doSomethingTernary(a) {
-      const b = a < 0 ? 2 : (a>0 ? 1 :3) 
-      return b
+//   function doSomethingTernary(a) {
+//       const b = a < 0 ? 2 : (a>0 ? 1 :3) 
+//       return b
     
-  }
-  console.log(doSomethingTernary(3))
-  console.log(doSomething())
+//   }
+//   console.log(doSomethingTernary(3))
+//   console.log(doSomething())
   
+//java nâng cao
+
+//1: var, let, const
+let name = "teo"
+function showName(){
+    let name ="ti"
+    return name
+}
+console.log(showName())
